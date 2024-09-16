@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adicione estilos específicos para telas menores que 768px */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adicione estilos específicos para telas menores que 480px */
+}
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('/assets/fonts/California Vibes.otf') format('opentype'),
+        url('/assets/fonts/Cheese Matcha.otf') format('opentype'),
+        url('/assets/fonts/giamlass-regular.otf') format('opentype'),
+        url('/assets/fonts/heroline.otf') format('opentype'),
+        url('/assets/fonts/MADE Mirage Thin PERSONAL USE.otf') format('opentype'),
+        url('/assets/fonts/Mecaros.otf') format('opentype'),
+        url('/assets/fonts/MOONIC otf.otf') format('opentype'),
+        url('/assets/fonts/NeutralFace.otf') format('opentype'),
+        url('/assets/fonts/Rows of Sunflowers.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff4f9;
+    color: #000;
+}
+
+header {
+    background-color: #ffccf2;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    box-sizing: border-box;
+}
+
+header h1 {
+    display: inline-block;
+    margin-right: 0;
+    font-family: giamlass;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff66b2;
+    margin: 0 15px;
+}
+
+.categoria-nav {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #ffe6f7;
+    padding: 10px 0;
+    border-radius: 9px;  
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5px;
+    z-index: 1000;
+    font-family: california vibes;
+}
+
+.categoria-nav a {
+    text-decoration: none;
+    color: #ff66b2;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.categoria-nav a:hover {
+    background-color: #ffccf2;
+    border-radius: 5px;
+}
+
+#produtos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#produtos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff66b2;
+}
+
+.produto {
+    display: inline-block;
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ffccf2;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto button {
+    background-color: #ff66b2;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #ff33a6;
+}
+
+.produto:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
